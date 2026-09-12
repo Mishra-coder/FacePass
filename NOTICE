@@ -1,0 +1,17 @@
+FacePass
+Copyright 2026 Devendra Mishra and FacePass contributors
+
+This product includes third-party machine-learning models:
+
+1. SFace face recognition model (face_recognition_sface_2021dec.onnx)
+   Source: OpenCV Zoo, https://github.com/opencv/opencv_zoo/tree/main/models/face_recognition_sface
+   Paper: Zhong et al., "SFace: Sigmoid-Constrained Hypersphere Loss for Robust Face Recognition", 2021
+   License: Apache License 2.0 (tools/models/licenses/SFace-OpenCVZoo-LICENSE)
+   Modifications: converted from ONNX to Core ML (tools/convert_sface.py).
+
+2. MiniFASNetV2 and MiniFASNetV1SE anti-spoofing models
+   Source: Minivision Silent-Face-Anti-Spoofing, https://github.com/minivision-ai/Silent-Face-Anti-Spoofing
+   License: Apache License 2.0 (tools/models/licenses/SilentFace-LICENSE)
+   Modifications: softmax appended and converted from PyTorch to Core ML (tools/convert_minifasnet.py).
+
+The training datasets behind these models carry their own terms. See the upstream projects for details.
